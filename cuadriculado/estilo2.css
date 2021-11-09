@@ -1,0 +1,53 @@
+.botonManga{
+      width: 50%;
+      
+     
+      
+      
+}
+.botonAnime{
+    width: 50%;
+    
+    
+}
+.button{
+    padding:250px 250px;
+    text-align: center;
+    
+}
+.TOP{ 
+    position:relative;
+    text-align: center;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 500px;
+    height: 500px;
+    }
+    
+.div1 { grid-area: 1 / 1 / 7 / 4; 
+    border:solid black 2px;
+    width: 500px;
+    height:500px;
+
+}
+
+.ultimas{
+    position:relative;
+    
+    height:500px;
+    width:100%; 
+    text-align: center;
+}
+.enlaces{
+    position:relative;
+    background:rgb(1, 3, 3) ;
+    height:500px;
+    width:100%; 
+    text-align: center;
+    
+}
