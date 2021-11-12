@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="https://lh3.googleusercontent.com/proxy/M2h6GBsmwOJEvYMlMmfRZpEw-7INlBCAJBL-zI2hDtGSc6UOQ4Q9LN5RpzR4hQO87Yf8EC2gdmfUpj7I1KejN2SkkShHLvHylMnC0gJOD4TY7eOgg3en" style="width:50%">
+        <img class="mySlides" src="https://somoskudasai.com/wp-content/uploads/2020/05/EZBgn41U0AAHbcg-719x1024.jpg" style="width:50%">
+        <img class="mySlides" src="https://i.pinimg.com/236x/72/24/26/722426ae895a95536f7cf5fc0d83f0a6.jpg" style="width:50%">
+        <img class="mySlides" src="https://storage.ko-fi.com/cdn/useruploads/display/96fb8c6f-46b2-4e3a-b7af-2dbe077fc5da_eampyauvaaewzcg.jpg" style="width:50%">
+      
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      
+      <script>
+ var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
