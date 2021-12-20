@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloanime.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="parent">
+    <div class="div1">
+      <div class="navbar">
+        <a href="biblioteca.html">Biblioteca</a>
+        <a href="formularioregistro.html">Registro</a>
+        <a href="iniciosesion.html">Iniciar Sesion</a>
+        <a href="manga.html">Manga</a>
+        <a href="pagina web 3.html">Home</a>
+      </div>
+    </div>
+    <div class="div2">
+      <div class="slideshow-container"    >
+                
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 10</div>
+          <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/07/one-piece-2403409.jpg?itok=mxFPXuee" style="width: 100%;height: 400px;">
+          <div class="text">One Piece</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 10</div>
+          <img src="https://www.themoviedb.org/t/p/original/xzjZDyqUobuJtkBljhgLH4Fdnye.jpg" style="width:100%;height: 400px;">
+          <div class="text">Tensei Shitara Slime Datta Ken</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 10</div>
+          <img src="https://areajugones.sport.es/wp-content/uploads/2021/09/welcome-to-demon-school-iruma-kun.jpeg"style="width:100%;height: 400px;">
+          <div class="text">Mairimashita Iruma-kun</div>
+        </div>
+
+         <div class="mySlides fade">
+          <div class="numbertext">4 / 10</div>
+          <img src="https://as01.epimg.net/meristation/imagenes/2021/08/24/noticias/1629798226_254136_1629798326_noticia_normal.jpg"style="width:100%;height: 400px;">
+          <div class="text">Boku no Hero Academia</div>
+         </div>
+         <div class="mySlides fade">
+          <div class="numbertext">5 / 10</div>
+          <img src="https://img.anime2you.de/2020/08/solo-lveling.jpg"style="width:100%;height: 400px;">
+          <div class="text">Solo Leveling</div>
+         </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 10</div>
+          <img src="https://elpalomitron.com/wp-content/uploads/2021/05/cuarta-temporada-de-Overlord-y-una-nueva-pelicula-destacada-El-Palomitron.jpg"style="width:100%;height: 400px;">
+          <div class="text">Overlord</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 10</div>
+          <img src="https://www.mangaread.org/wp-content/uploads/2020/01/Manga-Read-7.jpeg"style="width:100%;height: 400px;">
+          <div class="text">Maseki Gurume Mamono No Chikara O Tabeta Ore Wa Saikyou</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 10</div>
+          <img src="https://mangacrab.com/wp-content/uploads/2021/03/07Dec2020034946fed50001b7e73940c6e6.png"style="width:100%;height: 400px;">
+          <div class="text">A Paritr De Hoy Trabajare Como El Señor De La Ciudad</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 10</div>
+          <img src="https://nosomosnonos.com/wp-content/uploads/2020/04/Baki-Season-3.jpg"style="width:100%;height: 400px;">
+          <div class="text">Baki</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">10/ 10</div>
+          <img src="https://elcomercio.pe/resizer/XjG6j7_LmDHsNQf-f4Ki_g2KC-M=/1200x800/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/T26JCJCXEBDULA3QQK3HAU7O7A.jpg"style="width:100%;height: 400px;">
+          <div class="text">Nanatsu No Taizai</div>
+         </div>
+  
+
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+       <br>
+      
+     
+      
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+      
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+      
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+      
+        function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+         }
+         for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+         }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+        </script>
+      </div>
+  
+    
+     <div class="div3">
+      <div class="parent1">
+        <div class="div1">
+          
+        </div>
+        <div class="div2"> 
+
+        </div>
+        <div class="div3"> 
+
+        </div>
+        <div class="div4"> 
+
+        </div>
+        <div class="div5"> 
+
+        </div>
+        <div class="div6"> 
+
+        </div>
+        <div class="div7"> 
+
+        </div>
+        <div class="div8"> 
+
+        </div>
+        <div class="div9"> 
+
+        </div>
+        <div class="div10"> 
+
+        </div>
+        <div class="div11"> 
+
+        </div>
+        <div class="div12"> 
+
+        </div>
+        <div class="div13"> 
+
+        </div>
+        <div class="div14"> 
+
+        </div>
+        <div class="div15"> 
+
+        </div>
+        <div class="div16"> 
+
+        </div>
+        <div class="div17"> 
+
+        </div>
+        <div class="div18"> 
+
+        </div>
+        <div class="div19"> 
+
+        </div>
+        <div class="div20"> 
+          
+        </div>
+      </div>
+
+     </div>
+  </div>
+      
+        
+    
+</body>
+</html>
