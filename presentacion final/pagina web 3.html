@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo 3.css">
+    <title>Document</title>
+</head>
+<body >
+<div class="inicio">
+<div class="parent3">
+  <div class="div31"> 
+    <div class="parent4">
+        <div class="div32"> 
+          <div class="navbar" >
+           <a href="biblioteca.html">Biblioteca</a>
+           <a href="formularioregistro.html">Registro</a>
+           <a href="iniciosesion.html">Iniciar Sesion</a>
+          </div>
+        </div>
+        <div class="div33"> 
+          <div class="botonManga">
+             <button style="height: 200px;width: 100%;">
+             <a href="manga.html">Manga</a>
+             </button>
+          </div>
+        </div>
+        <div class="div34"> 
+           <div class="botonAnime"> 
+              <button style="width:100%;height: 200px;">
+              <a href="anime.html">Anime</a>
+              </button>
+           </div>
+        </div> 
+        <div class="div35">
+        <div class="slideshow-container"    >
+            
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 10</div>
+            <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/07/one-piece-2403409.jpg?itok=mxFPXuee" style="width: 100%;height: 200px;">
+            <div class="text">One Piece</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 10</div>
+            <img src="https://www.themoviedb.org/t/p/original/xzjZDyqUobuJtkBljhgLH4Fdnye.jpg" style="width:100%;height: 200px;">
+            <div class="text">Tensei Shitara Slime Datta Ken</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 10</div>
+            <img src="https://areajugones.sport.es/wp-content/uploads/2021/09/welcome-to-demon-school-iruma-kun.jpeg"style="width:100%;height: 200px;">
+            <div class="text">Mairimashita Iruma-kun</div>
+          </div>
+
+           <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="https://as01.epimg.net/meristation/imagenes/2021/08/24/noticias/1629798226_254136_1629798326_noticia_normal.jpg"style="width:100%;height: 200px;">
+            <div class="text">Boku no Hero Academia</div>
+           </div>
+           <div class="mySlides fade">
+            <div class="numbertext">5 / 10</div>
+            <img src="https://img.anime2you.de/2020/08/solo-lveling.jpg"style="width:100%;height: 200px;">
+            <div class="text">Solo Leveling</div>
+           </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <img src="https://elpalomitron.com/wp-content/uploads/2021/05/cuarta-temporada-de-Overlord-y-una-nueva-pelicula-destacada-El-Palomitron.jpg"style="width:100%;height: 200px;">
+            <div class="text">Overlord</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <img src="https://www.mangaread.org/wp-content/uploads/2020/01/Manga-Read-7.jpeg"style="width:100%;height: 200px;">
+            <div class="text">Maseki Gurume Mamono No Chikara O Tabeta Ore Wa Saikyou</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <img src="https://mangacrab.com/wp-content/uploads/2021/03/07Dec2020034946fed50001b7e73940c6e6.png"style="width:100%;height: 200px;">
+            <div class="text">A Paritr De Hoy Trabajare Como El Señor De La Ciudad</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <img src="https://nosomosnonos.com/wp-content/uploads/2020/04/Baki-Season-3.jpg"style="width:100%;height: 200px;">
+            <div class="text">Baki</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">10/ 10</div>
+            <img src="https://elcomercio.pe/resizer/XjG6j7_LmDHsNQf-f4Ki_g2KC-M=/1200x800/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/T26JCJCXEBDULA3QQK3HAU7O7A.jpg"style="width:100%;height: 200px;">
+            <div class="text">Nanatsu No Taizai</div>
+           </div>
+    
+
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+         <br>
+        
+       
+        
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+        
+          function plusSlides(n) {
+          showSlides(slideIndex += n);
+          }
+        
+          function currentSlide(n) {
+          showSlides(slideIndex = n);
+          }
+        
+          function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}    
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+           }
+           for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+           }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          }
+          </script>
+        </div>
+    </div>
+   </div> 
+  </div>
+</div> 
+  
+
+
+
+<div class="TOP" style="position: center;">
+      <h1>TOP</h1>
+      <div class="parent">
+        <div class="div1">
+            <button>
+                <a href="https://lectortmo.com/library/manga/44745/maseki-gurume-mamono-no-chikara-o-tabeta-ore-wa-saikyou">
+                    <img src="https://otakuteca.com/images/books/cover/5e349a7bebaa9.jpg" style="width: 180px;">
+                </a>
+            </button>
+        </div>
+        <div class="div2">
+            <a href="https://www3.animeflv.net/anime/kingdom">
+                <img src="https://ramenparados.com/wp-content/uploads/2021/09/Kingdom-1-esp.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div3">
+            <a href="https://lectortmo.com/library/manhua/47601/im-the-great-immortal">
+                <img src="https://manga-fenix.com/wp-content/uploads/2021/10/AddText_11-12-07.44.05-1-193x278.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div4">
+            <a href="https://lectortmo.com/library/manga/48346/tensei-kenja-wa-musume-to-kurasu">
+                <img src="https://otakuteca.com/images/books/cover/5e4dc5b4bf154.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div5">
+            <a href="https://www3.animeflv.net/anime/mushoku-tensei-isekai-ittara-honki-dasu">
+                <img src="https://static.wikia.nocookie.net/doblaje/images/a/ab/Mushoku_Tensei-_Jobless_Reincarnation.png/revision/latest?cb=20210826234538&amp;path-prefix=es" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        
+        <div class="div6">
+            <a href="https://www3.animeflv.net/anime/death-march-kara-hajimaru-isekai-kyousoukyoku">
+                <img src="https://somoskudasai.com/wp-content/uploads/2020/11/91MKFKdPPfL.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div7">
+            <a href="https://lectortmo.com/library/manga/37338/tensei-shitara-dragon-no-tamago-datta-saikyou-igai-mezasa-nee">
+                <img src="https://cdn.statically.io/img/i1.mangatigre.top/mangas/2edacaff247649c9c89e1b64e4d7f1bf.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div8">
+            <a href="https://www3.animeflv.net/anime/gate-jieitai-kanochi-nite-kaku-tatakaeri">
+                <img src="https://m.media-amazon.com/images/I/91s6TEPwldL._SY445_.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div9">
+            <a href="https://lectortmo.com/library/manga/42185/kage-no-jitsuryokusha-ni-naritakute">
+                <img src="https://pbs.twimg.com/media/D08pvNdWkAAk8BZ?format=jpg"  style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div10">
+            <a href="https://www3.animeflv.net/anime/ahiru-no-sora">
+                <img src="https://pics.filmaffinity.com/ahiru_no_sora_tv_series-600958671-large.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div11">
+            <a href="https://lectortmo.com/library/manga/35985/isekai-yururi-kikou-kosodateshinagara-boukensha-shimasu">
+                <img src="https://dragoontranslationblog.files.wordpress.com/2017/12/0dd38-02.jpg" style="height: 280px;width: 180px;" >
+            </a>
+        </div>
+        <div class="div12">
+            <a href="https://lectortmo.com/library/manga/11595/isekai-tensei-soudouki">
+                <img src="https://otakuteca.com/images/books/cover/6109bb9a86d62.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div13">
+            <a href="https://tumanga.net/manga/fundacion-de-un-estado-en-otro-mundo-con-un-pueblo-colonial-construido-a-mano-vida-despreocupada-en-una-isla-deshabitada-con-un-numero-creciente-de-novias/">
+                <img src="https://otakuteca.com/images/books/cover/5fcf327890b63.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div14">
+            <a href="https://www3.animeflv.net/anime/overlord">
+                <img src="https://larepublica.pe/resizer/UULRa-Nnhyuq2maeoAclHJrmKxw=/538x0/top/larepublica.pe/resizer/N7gxfwfr4SCEyn57avbDSnCpoDk=/538x0/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/DIMETNLK7JFV7OLU2C4O43LXY4.jpg" style="height: 280px;width: 180px;" >
+            </a>
+        </div>
+        <div class="div15">
+            <a href="https://lectortmo.com/library/manga/43367/magan-to-dangan-o-tsukatte-isekai-o-buchinuku">
+                <img src="https://cdn.statically.io/img/i1.mangatigre.top/mangas/ea5fe8f65da203a131a262f0558e390b.jpg" style="height: 280px;width: 180px;" >
+            </a>
+        </div>
+        <div class="div16">
+            <a href="https://www3.animeflv.net/anime/cheat-kusushi-no-slow-life-isekai-ni-tsukurou-drugstore">
+                <img src="https://cdn.statically.io/img/i1.mangatigre.top/mangas/5973f94a1bdfb6e608905e9620a3cc1f.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div17">
+            <a href="https://lectortmo.com/library/manhua/47934/daddy-from-hell">
+                <img src="https://cdn.statically.io/img/i1.mangatigre.top/mangas/026586abed8e36593c2a38c57899a594.jpg" style="height: 280px;width: 180px;" >
+            </a>
+        </div>
+        <div class="div18">
+            <a href="https://lectortmo.com/library/manga/24129/gaikotsu-kishi-sama-tadaima-isekai-e-odekake-chuu">
+                <img src="https://somoskudasai.com/wp-content/uploads/2020/08/EgFStIZX0AAXEHx.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div19">
+            <a href="https://lectortmo.com/library/manhwa/49211/bug-player">
+                <img src="https://tumanhwas.com/assets_m/series/covers/60a5760ad9907.jpg" style="height: 280px;width: 180px;">
+            </a>
+        </div>
+        <div class="div20">
+            <a href="https://lectortmo.com/library/manhwa/48986/overgeared">
+                <img src="https://novelasligera.com/wp-content/uploads/2020/04/Overgeared-novela-en-espa%C3%B1ol-online.jpg"style="height: 280px;width: 180px;">
+            </a>
+        </div>
+    </div> 
+
+</div>
+
+
+<div class="ultimas">
+    <h1>Ultimas subidas</h1>
+    <div class="parent1">
+        <div class="div21">
+            <a href="https://www3.animeflv.net/anime/kenja-no-mago">
+         <img src="https://i.ebayimg.com/images/g/uP0AAOSw0gVdqA6H/s-l300.jpg"style="height: 280px;width: 130px;">
+            </a>
+             <a href="https://lectortmo.com/library/manga/16476/kenja-no-mago" style="float: right;margin: 120px -80px 15px 0px; ">Caiptulo 54.30 </a>  
+        </div>
+        <div class="div22">
+            <a href="https://www3.animeflv.net/anime/mob-psycho-100">
+            <img src="https://es.web.img2.acsta.net/pictures/20/11/12/14/25/3371142.jpg"style="height: 280px;width: 130px;">
+            </a>
+            <a href="https://lectortmo.com/library/manga/14019/mob-psycho-100" style="float: right;margin: 120px -80px 15px 0px; ">Caiptulo 101</a>
+        </div>
+        <div class="div23">
+            <a href="https://www3.animeflv.net/anime/fairy-tail">
+            <img src="https://as01.epimg.net/meristation/imagenes/2019/12/30/cover/822964351577733384.jpg"style="height: 280px;width: 130px;">
+            </a>
+            <a href="https://lectortmo.com/library/manga/2968/fairy-tail" style="float: right;margin: 120px -80px 15px 0px; ">Caiptulo 545.02</a>
+        </div>
+        <div class="div24">
+            <a href="https://www3.animeflv.net/anime/mahouka-koukou-no-rettousei">
+            <img src="https://letrasanime.com/animes-info/mahouka-koukou-no-rettousei/cover/mahouka-koukou-no-rettousei-lyrics.jpg"style="height: 280px;width: 130px;">
+            </a>
+            <a href="https://lectortmo.com/library/manga/8263/Mahouka-Koukou-no-Rettousei-Ny" style="float: right;margin: 120px -80px 15px 0px; ">Caiptulo 23</a>
+        </div>
+        <div class="div25">
+            <a href="https://www3.animeflv.net/anime/sword-art-online">
+            <img src="https://es.web.img3.acsta.net/pictures/19/07/09/10/29/5095173.jpg"style="height: 280px;width: 130px;">
+            </a>
+            <a href="https://lectortmo.com/library/manga/8156/sword-art-online-progressive" style="float: right;margin: 120px -80px 15px 0px; ">Caiptulo 43</a>
+        </div>
+        <div class="div26">
+            <a href="https://www3.animeflv.net/anime/uq-holder-mahou-sensei-negima-2">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81BCt79jCSL.jpg"style="height: 280px;width: 130px;">
+            </a>
+            <a href="https://lectortmo.com/library/manga/8777/uq-holder" style="float: right;margin: 120px -80px 15px 0px; ">Caiptulo 185</a>
+        </div>
+        <div class="div27">
+            <a href="https://www3.animeflv.net/anime/akame-ga-kill">
+            <img src="https://es.web.img3.acsta.net/pictures/20/03/04/17/23/4420222.jpg"style="height: 280px;width: 130px;">
+            </a>
+            <a href="https://lectortmo.com/library/manga/5365/akame-ga-kill" style="float: right;margin: 120px -80px 15px 0px; ">Caiptulo 78.50</a>
+        </div>
+        <div class="div28">
+            <a href="https://lectortmo.com/library/manga/12658/isekai-maou-to-shoukan-shoujo-no-dorei-majutsu" style="float: right;margin: 120px -80px 15px 0px; ">Caiptulo 76.20</a>
+            <a href="https://www3.animeflv.net/anime/isekai-maou-to-shoukan-shoujo-no-dorei-majutsu">
+            <img src="https://letrasanime.com/animes-info/isekai-maou-to-shoukan-shoujo-no-dorei-majutsu/cover/isekai-maou-to-shoukan-shoujo-no-dorei-majutsu-lyrics.jpg"style="height: 280px;width: 130px;">
+            </a>
+            
+        </div>
+        <div class="div29">
+            <a href="https://www3.animeflv.net/anime/ao-no-exorcist">          
+            <img src="https://pics.filmaffinity.com/Ao_no_Ekusoshisuto_Ao_no_Exorcist_Blue_Exorcist_Serie_de_TV-127607908-large.jpg"style="height: 280px;width: 130px;">
+            </a>
+            <a href="https://lectortmo.com/library/manga/8366/ao-no-exorcist" style="float: right;margin: 120px -80px 15px 0px;; ">Caiptulo 132</a>
+        </div>
+        <div class="div30">
+            <a href="https://lectortmo.com/library/manga/15125/kimetsu-no-yaiba"style="float: right;margin: 120px -80px 15px 0px; ">Caiptulo 205.50</a>
+            <a href="https://www3.animeflv.net/anime/kimetsu-no-yaiba">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202106/1704/2ZfAUG5CTXdM34S1OhmMW1zF.jpg"style="height: 280px;width: 130px;">
+            </a>
+            
+        </div>
+        </div>
+ </div>
+    
+<div class="enlaces">
+  <h1 style="color: white;">Paginas de los Scan</h1>
+    <div class="knightscanlation">
+            <button style="color: white;">
+                <a href="https://knightnoscanlation.com/" target="_blank">
+                   <img src="https://pbs.twimg.com/profile_images/1258054412150247426/O9KVDhdn_400x400.jpg" style="float:left;width:150px;height:250px;"> 
+                </a>
+            </button>
+            <button style="color:white">
+                <a href="https://nartag.com/" target="_blank">
+                    <img src="https://i3.wp.com/nartag.com/wp-content/uploads/2021/02/Traducciones_amistosas_2.png" style="float:left;width:150px;height:250px;">
+                </a>
+            </button>
+            <button>
+                <a href="https://rawdevart.com/?page=1&&p=3" target="_blank">
+                    <img src="data:image/jpeg;base64,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Wp5gL6mwty46i1uWs9Q7TwFLEUno1kD03FmU8+YI5gg2II1BAImgd8t0K2z6lgWag5+jqcPPI9tA4+TAXHMAKzRpgqxJYkMQDxutgVvf4z49I8rEe+36pIbOoDKffb5W/v8AumPVplT93ygYyqeZt7tT8z+oTklMXDDNmGua5uCOYPUHW/lOVpzpm3xgbq3U7SMLUwyel10pV18DhrjMVtaoLC1mHEcjcdJ8xP8AobaOMot6RTqORY0RwrMviTNca2Aa49rQHQWNd7ONxTVIxeIW1E2KUyP37o7DlT6D2uPD1twiko4KPkIHIC2k5REBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEw9o4CnXpvRqqGRxZlP3HyINiCNQQDMyIGhd5d06mAduL0Wa9N+fA3R7cHAHubiOYEDiKYOvI6/t8J6Nx2DSsjU6ihkYWIP4+RHEEagiaR3s3bfA1crXfDuT3dToTr3b/VYakciBccwoVR8LzGn65fOz3cE1yuKxa/QDxU6RH76eTuD/F9B7X5vrZ24u5RqlcTiV+i4oh/jOjMPqeXte71tsgQAE+xEBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERATFxuDp1abU6qLURrZkcBlNiCLg6HUAzKiB8An2IgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIH/2Q==" width="150px" height="250px">
+                </a>
+            </button>
+            <button>
+                <a href="https://hunterfansub.com/" target="_blank">
+                    <img src="https://nimg.taadd.com/logo/22/Subiendo_de_nivel_solo_comiendo_arroz.jpg" with="175px" height="250px">
+                </a>
+            </button>
+            <button>
+                <a href="https://manga-fenix.com/" target="_blank">
+                    <img src="data:image/jpeg;base64,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" height="250px" width="150">
+                    </a>
+            </button>
+            <button>
+                <a href="https://samuraiscan.com/" target="_blank">
+                    <img src="https://samuraiscan.com/wp-content/uploads/WP-manga/data/manga_611737fb17642/3ad3f14f3823b8278835dddf64cbbfcf/0Logo1.webp"width="150px" height="250px">
+                </a>
+            </button>
+    </div>
+</div>
+
+<div class="traductores">
+    <h1>Paginas Anime</h1>
+    <div class="animeflv">
+        <button style="color: white;">
+        <a href="https://www3.animeflv.net/" target="_blank">
+            <img src="https://i2.wp.com/digitalpolicylaw.com/wp-content/uploads/2019/05/dplnews_animeflv_vr290519.jpg"width="300px" height="250px">
+        </a>
+        </button>
+       
+        <button style="color: white;">
+            <a href="https://www.animefenix.com/" target="_blank">
+                <img src="https://play-lh.googleusercontent.com/db4XvJoRWbQfMSCHLjdEK6gv1WFQTHIWl5OuiqzyimTBiq_haM1mc8zFCFF4Dpj5fQ=w200-rw"width="300px" height="250px">
+            </a>
+        </button>
+
+    </div>
+</div>
+
+
+</body>
+</html>
